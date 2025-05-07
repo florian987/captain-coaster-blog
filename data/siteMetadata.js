@@ -3,7 +3,8 @@ const siteMetadata = {
   title: 'Captain Coaster Blog',
   author: 'Captain Coaster Team',
   headerTitle: 'Captain Coaster Blog',
-  description: 'Official blog for Captain Coaster - The ultimate guide for roller coaster enthusiasts',
+  description:
+    'Official blog for Captain Coaster - The ultimate guide for roller coaster enthusiasts',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://blog.captaincoaster.com',
@@ -50,9 +51,9 @@ const siteMetadata = {
     // },
   },
   newsletter: {
-  // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus, beehive
-  // Please add your .env file and modify it according to your selection
-  // provider: 'buttondown',
+    // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus, beehive
+    // Please add your .env file and modify it according to your selection
+    // provider: 'buttondown',
   },
   comments: {
     // If you want to use an analytics provider you have to add it to the

@@ -9,6 +9,7 @@ import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import ViewCounter from '@/components/ViewCounter'
 
 interface LayoutProps {
   content: CoreContent<Blog>
@@ -37,6 +38,9 @@ export default function PostMinimal({ content, next, prev, children }: LayoutPro
             </div>
             <div className="relative pt-10">
               <PageTitle>{title}</PageTitle>
+              <div className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                <ViewCounter slug={slug} />
+              </div>
             </div>
           </div>
           <div className="prose dark:prose-invert max-w-none py-4">{children}</div>

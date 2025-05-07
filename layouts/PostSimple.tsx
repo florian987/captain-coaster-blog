@@ -8,6 +8,7 @@ import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import ViewCounter from '@/components/ViewCounter'
 
 interface LayoutProps {
   content: CoreContent<Blog>
@@ -30,7 +31,11 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                 <div>
                   <dt className="sr-only">Published on</dt>
                   <dd className="text-base leading-6 font-medium text-gray-500 dark:text-gray-400">
-                    <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
+                    <div className="flex flex-row items-center justify-center space-x-2">
+                      <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
+                      <span>•</span>
+                      <ViewCounter slug={slug} />
+                    </div>
                   </dd>
                 </div>
               </dl>
