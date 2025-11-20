@@ -1,9 +1,9 @@
 {
+  "news": 2,
+  "announcement": 3,
+  "behind-the-scenes": 3,
+  "captain-coaster": 3,
   "ranking": 1,
   "tech": 1,
-  "behind-the-scenes": 2,
-  "announcement": 2,
-  "captain-coaster": 2,
-  "community": 1,
-  "new": 1
+  "community": 1
 }
