@@ -1,0 +1,181 @@
+---
+title: 'Captain Coaster News & Improvements – November 2025 to February 2026'
+date: '2026-03-11'
+tags: ['news', 'announcement', 'behind-the-scenes', 'captain-coaster']
+draft: false
+summary: 'From a redesigned search and smarter filters to French Captain’s Reviews and new account tools, Captain Coaster kept evolving for the community between November 2025 and February 2026!'
+authors: ['richard']
+---
+
+A lot has happened behind the scenes on Captain Coaster over the past few months. From major interface improvements to new community tools and plenty of fixes, here’s everything that landed between **November 2025 and February 2026**.
+
+## November 2025
+
+### 🚀 JavaScript & CSS refactoring
+
+The site's JavaScript and CSS were reorganized into **separate and cleaner files** to reduce duplication.
+
+📝 **Note**: this technical cleanup is an important step toward the next major UI redesign planned for the platform.
+
+### 🚀 Find coasters nearby page replaced
+
+The former **"Find coasters nearby"** page has been replaced by a new page called [Search Coasters](https://captaincoaster.com/en/search-coaster), offering a clearer layout and additional filters.
+
+![Search coasters](/static/images/news/search-coasters.jpg)
+
+### 🚀 New map interface
+
+[Map](https://captaincoaster.com/en/map) markers now **display the number of coasters in each park**.
+
+![Map markers](/static/images/news/markers.jpg)
+
+👉 Their **color changes depending on the number of coasters**, making it easier to identify larger parks when exploring the map.
+
+### 🚀 New interface for top lists
+
+The editor used to update **Top Coasters lists** has been completely redesigned!
+
+![Top editor](/static/images/news/top-editor.jpg)
+
+Searching for coasters within the editor has also been improved:
+
+![Top search](/static/images/news/top-search.jpg)
+
+👉 The manual **Save button** has been replaced by automatic updates triggered whenever you add or modify a coaster in your list.
+
+📝 **Note**: this change prevents memory errors and now allows users to create Top lists with more than **500 coasters**.
+
+### 🚀 Filter System Harmonization
+
+Filters are now handled **consistently across the map, Rankings, and Search Coasters pages**. Some filters appear only where relevant. For example:
+
+- **New this month** on the ranking
+- **Hide kiddie coasters** and **Score** on the map
+- **Sort by distance** on the Search Coasters page
+
+👉 This also makes the filter system easier to maintain and extend in the future!
+
+### 🚀 New quick & advanced search
+
+The quick search previously powered by the typeahead library has been replaced with a **custom-built solution**:
+
+![Quick search](/static/images/news/quick-search.jpg)
+
+The **advanced search** interface has also been redesigned!
+
+![Advanced search](/static/images/news/advanced-search.jpg)
+
+📝 **Note**: Search results are now **cached**, making repeated searches significantly faster.
+
+### 🔧 Favorite Manufacturer explanation
+
+The **Favorite Manufacturer** statistic on profile overview now includes a short explanation and how many coasters from that manufacturer appear in the **user’s Top 10**. Here's an example with my profile:
+
+![Favorite manufacturer](/static/images/news/favorite-manufacturer.jpg)
+
+### 🐛 Fixed: Opening date filters
+
+Coasters with unknown opening dates previously created an empty value in the **opening date filters**. This have been removed.
+
+👉 Additional validation has also been added in the admin panel to prevent wrong dates.
+
+### 🐛 Accents in names
+
+Profile settings now support **diatrics** in the _First Name_ and _Last Name_ fields!
+
+### 🐛 Page titles harmonization
+
+Page titles were standardized across all supported languages!
+
+📝 **Note**: The **personal map page** now also includes the username in the page title.
+
+### 🐛 Fixed: profile link in emails
+
+Notification emails now correctly link to the user's **profile page**.
+
+---
+
+## December 2025
+
+### 🚀 Captain's Review now available in French
+
+The first **French AI-generated Captain’s Reviews** have appeared on the site. An example with _Flight Force_:
+
+![French Ccaptain Review](/static/images/news/french-captain-review.webp)
+
+📝 **Note**: English summaries are still slightly more accurate for now, but the French version will continue to improve.
+
+### 🚀 Sorting ratings & reviews
+
+A new selector now allows users to **sort ratings and reviews**!
+
+![Reviews sorting](/static/images/news/reviews-sorting.jpg)
+
+👉 You can currently sort by:
+
+- **Date** (oldest → newest or vice versa)
+- **Rating value** (highest → lowest or vice versa)
+
+📝 **Note**: The default sorting remains unchanged: reviews in the selected language(s), then **most liked**, then **most recently updated or published**.
+
+### 🔧 Homepage image selection
+
+The homepage image is now determined by the **most recent like received**, rather than the most recently uploaded or modified image.
+
+### 🔧 Review language display
+
+By default, reviews are now displayed **only in the language selected by the user**.
+
+---
+
+## January 2026
+
+### 🚀 Ride date improvements
+
+Ride dates are now validated against the **opening and closing dates of each coaster**!
+
+👉 A new **"Today" button** also makes it easier to quickly set the current date:
+
+![Ride date](/static/images/news/ride-date.jpg)
+
+### 🚀 Account Deletion
+
+Users can now **delete their account directly from profile settings**.
+
+![Account deletion](/static/images/news/account-deletion.jpg)
+
+👉 User data is automatically deleted after **one month**.
+
+### 🐛 Kiddie coasters counter
+
+On park pages, the **kiddie coasters counter** now only includes kiddie coasters that are **currently operating**. Example with [Dorney Park](https://captaincoaster.com/en/parks/77/dorney-park), where only **Woodstock Express** is currently operating:
+
+![Kiddie counter](/static/images/news/kiddie-counter.jpg)
+
+### 🐛 Country translations in quick search
+
+Country name translations in the **quick search** were corrected.
+
+---
+
+## February 2026
+
+### 🔧 Default review sorting adjustment
+
+Only the **default sorting mode** now prioritizes reviews written in the user’s selected language(s).
+
+👉 Other sorting options focus solely on the chosen criteria (date or rating value).
+
+### 🐛 Reviews from disabled users
+
+Review listing pages were still displaying reviews from **disabled users**. This has now been fixed!
+
+### 🐛 Rating deletion
+
+An issue preventing ratings from being deleted using the **button below the rating** has been corrected.
+
+---
+
+That’s it for this round of updates! As always, thank you to everyone in the Captain Coaster community for continuing to ride, review, and improve the platform together 🎢
+
+— The Captain Coaster Team
